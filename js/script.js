@@ -10,30 +10,6 @@ document.addEventListener('DOMContentLoaded'), function() {
     })
 } 
 
-/*
-NodeList.prototype.forEach = Array.prototype.forEach;
-
-var menu = document.querySelectorAll (".header-bottom__item");
-var submenu = document.querySelectorAll (".submenu");
-menu.forEach (function() {
-  menu.addEventListener ('click', function() {
-    submenu.classList.toggle ("visually-hidden");
-  })
-})
-
-
-
-menu.forEach(function(menu) {
-    menu.addEventListener ("click", function (evt) {
-        evt.preventDefault ();
-        submenu.forEach(function(submenu) {
-            submenu.classList.toggle ("visually-hidden");
-        })
-        });
-});
-
-*/
-
 const element = document.querySelector('.galery-filter');
 const choices = new Choices(element, {
     searchEnabled: false,
