@@ -10,6 +10,16 @@ document.addEventListener('DOMContentLoaded', function() {
     })
 })
 
+var showAll = document.querySelector (".events__button-all");
+var eventsItems = document.querySelector (".events__items");
+
+showAll.addEventListener ("click", function(event) {
+  event.preventDefault ();
+  showAll.classList.add ("events__item-closed");
+  eventsItems.classList.remove ("events__item-closed");
+  eventsItems.classList.add ("events__item-oppened");
+});
+
 const element = document.querySelector('.galery__filter');
 const choices = new Choices(element, {
     searchEnabled: false,
@@ -31,25 +41,27 @@ var swiper = new Swiper('.swiper-container', {
     },
 });
 
-var swiper = new Swiper('.editions-swiper-container', {
+var swiper = new Swiper('.editions__swiper-container', {
     slidesPerView: 3,
+    spaceBetween: 50,
     pagination: {
-        el: '.swiper-pagination',
-        type: 'fraction',
-        clickable: true,
+      el: '.swiper-pagination',
+      type: 'fraction',
+      clickable: true,
     },
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-});
+  });
 
-var swiper = new Swiper('.projects-swiper-container', {
+var swiper = new Swiper('.projects__swiper-container', {
     slidesPerView: 3,
+    spaceBetween: 50,
     pagination: {
-        el: '.swiper-pagination',
-        type: 'fraction',
-        clickable: true,
+      el: '.swiper-pagination',
+      type: 'fraction',
+      clickable: true,
     },
     navigation: {
         nextEl: '.swiper-button-next',
@@ -105,6 +117,6 @@ function init() {
         iconImageSize: [20, 20],
         iconImageOffset: [-3, -42]
     });
-    // Размещение геообъекта на карте. 
+    // Размещение геообъекта на карте.
     myMap.geoObjects.add(myPlacemark);
 }
