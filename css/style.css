@@ -104,7 +104,7 @@ ul {
 .header-top__log-in {
   position: relative;
   display: block;
-  margin-top: 35px;
+  margin-top: 36px;
   font-size: 18px;
   line-height: 25px;
   text-align: center;
@@ -157,7 +157,7 @@ ul {
   display: flex;
   justify-content: space-between;
   width: 951px;
-  padding-top: 23px;
+  padding-top: 25px;
   padding-bottom: 22px;
   font-size: 18px;
   line-height: 25px;
@@ -224,7 +224,7 @@ ul {
 }
 
 .header-bottom__search {
-  margin-right: -27px;
+  margin-right: -31px;
   margin-top: -4px;
 }
 
@@ -295,10 +295,10 @@ ul {
 
 .hero-section__heading {
   width: 755px;
-  padding: 143px 0 0 154px;
+  padding: 141px 0 0 154px;
   font-weight: bold;
   font-size: 72px;
-  line-height: 82px;
+  line-height: 83px;
   color: #fff;
   letter-spacing: .2px;
 }
