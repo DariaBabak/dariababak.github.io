@@ -1,15 +1,16 @@
 @font-face {
   font-family: "OpenSans";
-  src: url("../fonts/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans-Regular.woff") format("woff");
-  font-display: swap;
-  font-weight: 400;
+  src: url("../fonts/OpenSans-Regular.woff2") format("woff2"),
+       url("../fonts/OpenSans-Regular.woff") format("woff");
+  font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "OpenSansBold";
-  src: url("../fonts/OpenSans-bold.woff2") format("woff2"), url("../fonts/OpenSans-bold.woff") format("woff");
-  font-display: swap;
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-bold.woff2") format("woff2"),
+       url("../fonts/OpenSans-bold.woff") format("woff");
+  font-weight: bold;
   font-style: normal;
 }
 
@@ -25,9 +26,9 @@ html {
 
 body {
   width: 1920px;
-  font-family: "OpenSans", sans-serif;
+  font-family: "OpenSans", Arial, sans-serif;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: normal;
   line-height: 32px;
   color: #333333;
   background-color: #ffffff;
@@ -75,12 +76,12 @@ ul {
 .header-top__menu {
   display: flex;
   justify-content: space-between;
-  width: 900px;
-  margin: 35px 120px 0 0;
+  width: 908px;
+  margin: 35px 120px 0 5px;
   font-weight: 600;
   font-size: 18px;
   line-height: 25px;
-  letter-spacing: .7px;
+  letter-spacing: .1px;
   text-align: center;
 }
 
@@ -107,14 +108,14 @@ ul {
   font-size: 18px;
   line-height: 25px;
   text-align: center;
-  letter-spacing: .7px;
+  letter-spacing: .4px;
 }
 
 .header-top__log-in::before {
   content: "";
   position: absolute;
   top: 5px;
-  left: -20px;
+  left: -19px;
   width: 13px;
   height: 13px;
   background-image: url(../img/log-in.svg);
@@ -222,11 +223,16 @@ ul {
   margin-right: 10px;
 }
 
+.header-bottom__search {
+  margin-right: -27px;
+  margin-top: -4px;
+}
+
 .search__input {
-  margin: 25px 47px 0 0;
+  margin: 27px 47px 0 0;
   padding: 5px;
   background-color: transparent;
-  letter-spacing: .5px;
+  letter-spacing: .01px;
   border: none;
   outline: none;
 }
@@ -246,7 +252,7 @@ ul {
   content: "";
   position: absolute;
   top: 20px;
-  left: 35px;
+  left: 32px;
   width: 218px;
   height: 1px;
   background: rgba(255, 255, 255, 0.85);
@@ -288,23 +294,23 @@ ul {
 }
 
 .hero-section__heading {
-  width: 761px;
-  padding: 145px 0 0 154px;
-  font-family: 'OpenSansBold';
+  width: 755px;
+  padding: 143px 0 0 154px;
+  font-weight: bold;
   font-size: 72px;
-  line-height: 81px;
+  line-height: 82px;
   color: #fff;
-  letter-spacing: .4px;
+  letter-spacing: .2px;
 }
 
 .hero-section__description {
   margin: -27px 0 0 160px;
-  width: 579px;
+  width: 563px;
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
   color: #fff;
-  letter-spacing: .9px;
+  letter-spacing: .01px;
 }
 
 .button {
@@ -319,7 +325,7 @@ ul {
 .hero-section__button {
   display: block;
   width: 314px;
-  margin: 94px 0 0 160px;
+  margin: 91px 0 0 160px;
   padding: 22px 30px;
   background-color: var(--lilac);
   color: #fff;
@@ -350,9 +356,10 @@ ul {
 }
 
 .aboutus__description {
-  margin: 19px 0 74px 158px;
+  margin: 16px 0 74px 158px;
   width: 1080px;
   letter-spacing: .01px;
+  line-height: 32px;
 }
 
 .galery {
