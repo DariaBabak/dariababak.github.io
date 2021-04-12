@@ -58,6 +58,11 @@ ul {
   justify-content: space-between;
 }
 
+.header__container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .header {
   color: #fff;
 }
@@ -70,22 +75,27 @@ ul {
 }
 
 .header__logo {
-  margin: 27px 0 30px 0;
+  margin-right: 10px;
+}
+
+.header-top__navigation {
+  padding-top: 6px;
 }
 
 .header-top__menu {
   display: flex;
   justify-content: space-between;
   width: 908px;
-  margin: 35px 120px 0 5px;
-  font-weight: 600;
+  margin-right: 120px;
+  font-weight: 400;
   font-size: 18px;
   line-height: 25px;
   text-align: center;
+  letter-spacing: .5px;
 }
 
 .header-top__link {
-  padding: 5px;
+  padding-right: 11px;
 }
 
 .header-top__link:focus {
@@ -94,20 +104,26 @@ ul {
 
 .header-top__link:hover {
   color: var(--light-lilac);
+  transition: .5s;
 }
 
 .header-top__link:active {
   color: var(--dark-lilac);
+  transition: .5s;
+}
+
+.header-top__wrapper {
+  padding-top: 8px;
 }
 
 .header-top__log-in {
   position: relative;
   display: block;
-  margin-top: 36px;
   font-size: 18px;
   line-height: 25px;
   text-align: center;
   letter-spacing: .4px;
+  outline: none;
 }
 
 .header-top__log-in::before {
@@ -132,24 +148,29 @@ ul {
 
 .header-top__log-in:hover {
   color: var(--light-lilac);
+  transition: .5s;
 }
 
 .header-top__log-in:hover::before {
   background-image: url(../img/log-in-hover.svg);
+  transition: .5s;
 }
 
 .header-top__log-in:active {
   color: var(--dark-lilac);
+  transition: .5s;
 }
 
 .header-top__log-in:active:before {
   background-image: url(../img/log-in-active.svg);
+  transition: .5s;
 }
 
 .header-bottom {
   position: relative;
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 1;
+  margin-bottom: -68px;
 }
 
 .header-bottom__menu {
@@ -222,13 +243,17 @@ ul {
   margin-right: 10px;
 }
 
+.header-bottom__wrapper {
+  padding-top: 23px;
+}
+
 .header-bottom__search {
   margin-right: -31px;
   margin-top: -4px;
 }
 
 .search__input {
-  margin: 27px 47px 0 0;
+  margin: 0 49px 0 0;
   padding: 5px;
   background-color: transparent;
   letter-spacing: .01px;
@@ -276,10 +301,9 @@ ul {
 }
 
 .hero-section {
-  margin-top: -118px;
   background: url(../img/birmingham.jpg);
   width: 1920px;
-  height: 700px;
+  height: 697px;
   animation: background-animation 20s linear infinite alternate;
 }
 
@@ -292,9 +316,14 @@ ul {
   }
 }
 
+.hero-section__container {
+  display: block;
+  padding-top: 90px;
+}
+
 .hero-section__heading {
-  width: 730px;
-  padding: 142px 0 0 154px;
+  width: 600px;
+  margin-bottom: 22px;
   font-weight: bold;
   font-size: 72px;
   line-height: 83px;
@@ -303,8 +332,8 @@ ul {
 }
 
 .hero-section__description {
-  margin: -29px 0 0 160px;
   width: 563px;
+  margin-bottom: 91px;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
@@ -324,7 +353,6 @@ ul {
 .hero-section__button {
   display: block;
   width: 314px;
-  margin: 91px 0 0 160px;
   padding: 23px 30px;
   background-color: var(--lilac);
   color: #fff;
