@@ -48,11 +48,13 @@
                 </li>
               </ul>
             </nav>
-            <a class="header-top__log-in" href="#" id="log-in">Войти</a>
+            <div class="header-top__wrapper">
+              <a class="header-top__log-in" href="#" id="log-in">Войти</a>
+            </div>
         </div>
       </div>
       <div class="header__bottom header-bottom">
-        <div class="header__container container">
+        <div class="header-bottom__container container">
           <nav class="header-bottom__navigation">
             <ul class="header-bottom__menu">
               <li class="header-bottom__item" data-path="one"> Реализм
@@ -177,17 +179,21 @@
               </li>
             </ul>
           </nav>
-          <form class="header-bottom__search search" action="#" method="get">
-              <button class="search__button" type="submit"></button>
-              <input class="search__input" name="search" placeholder="Поиск по сайту" type="search">
-          </form>
+          <div class="header-bottom__wrapper">
+            <form class="header-bottom__search search" action="#" method="get">
+                <button class="search__button" type="submit"></button>
+                <input class="search__input" name="search" placeholder="Поиск по сайту" type="search">
+            </form>
+          </div>
         </div>
       </div>
     </header>
     <section class="hero-section">
-      <h1 class="hero-section__heading">Прикоснитесь к прекрасному</h1>
-      <p class="hero-section__description">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</p>
-      <a class="button hero-section__button" href="#contacts">Подписаться на рассылку</a>
+      <div class="hero-section__container container">
+        <h1 class="hero-section__heading">Прикоснитесь к прекрасному</h1>
+        <p class="hero-section__description">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</p>
+        <a class="button hero-section__button" href="#contacts">Подписаться на рассылку</a>
+      </div>
     </section>
     <section class="aboutus" id="aboutus">
       <h2 class="heading aboutus__heading">О нас</h2>
@@ -201,7 +207,7 @@
       <div class="container">
         <div class="galery__wrapper">
           <h2 class="heading galery__heading">Галерея</h2>
-          <p class="white-text">Фильтровать по:</p>
+          <p class="galery__white-text white-text">Фильтровать по:</p>
           <select class="galery__filter" name="galery-filter" id="galery-filter">
             <option value="">Автор</option>
             <option value="">Направление</option>
